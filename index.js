@@ -45,8 +45,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-const number = '1999'
-console.log(parseInt(number))
+const tiro = Number('1999');
+// console.log(typeof(tiro));
+console.log(tiro);
 
 
 /*
@@ -148,10 +149,6 @@ for ( let i = 1; i < 100; i++ ) {
         }
         
         
-
-
-
-
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 

@@ -9,6 +9,11 @@ Do the following:
 
 */
 
+ const votinAge = 18 
+
+if (votinAge <= 18){
+   console.log(true)
+}
 
 
 /*
@@ -20,8 +25,15 @@ Do the following:
    3. Return the new value of the 1st variable
 
 */
+ let num = 10
+num = 22 
 
-
+if ( num >18) {
+   console.log(num)
+   
+}else{
+   console.log(num)
+}
 
 /*
 Task 3 - Convert Strings to Numbers
@@ -33,6 +45,9 @@ Do the following:
 
    HINT: look up the Number method
 */
+const tiro = Number('1999');
+// console.log(typeof(tiro));
+console.log(tiro);
 
 
 /*
@@ -44,7 +59,16 @@ Do the following:
    3. Else just print 'So moody!'
 
 */
-
+var person = prompt("Please enter your mood");
+const b1 = "happy"
+const b2 ="sad"
+if (person == b1) {
+   console.log('yay me too')  
+}else if ( person == b2) {
+   console.log('Aw cheer up')
+}else {
+   console.log('So moody!')
+}
 
 /*
 
@@ -53,11 +77,17 @@ Task 5 - Odd or Even
 
 Use conditionals to check if a hardcoded number is odd or even, and then console.log the number is odd or even with the numbers value.
 
-*/
+jh*/
 
-var num; // write a number here
+// var num; // write a number here
+const testNum = 17;
 
-// write your conditions here
+// // write your conditions here
+if (testNumber = 0) {
+   console.log('even')
+} else {
+   console.log('odd')
+}
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 FIZZBUZZ 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -101,7 +131,24 @@ It's okay for it to be slow.
 
 
 */
+for ( let i = 1; i < 100; i++ ) {
+  
+        console.log(i);
 
+        if (i%3 === 0) {
+         console.log('fizz');
+        } 
+         else if (i%5 === 0) {
+         console.log('buzz');
+        }
+        if (i%3 === 0 && i%5=== 0)  {
+         console.log('fizzbuzz');
+        }
+        else
+        console.log(i);
+        }
+        
+        
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
@@ -115,7 +162,21 @@ Using the vowelCounter function below do the following:
   HINT - try looking up the .includes() method
 */
 
+let magac= "aIdarOus mAhamEd "
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowel_count(str1)
+{
+  var vowel_list = 'aeiouAEIOU';
+  var vcount = 0;
+  
+  for(var x = 0; x < str1.length ; x++)
+  {
+    if (vowel_list.indexOf(str1[x]) !== -1)
+    {
+      vcount += 1;
+    }
+  
+  }
+  return vcount;
 }
+console.log(vowel_count (magac) );
